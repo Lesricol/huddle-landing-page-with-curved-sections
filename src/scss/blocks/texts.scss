@@ -1,15 +1,51 @@
 @use '../mixins/responsive.scss' as *;
 
-.text{
-    margin: 0 0 48px;
-    font-size: 0.875rem;
-    line-height: 21px;
+.text {
+  margin: 0 0 48px;
+  font-size: 0.875rem;
+  line-height: 21px;
+  @include responsive(desktop) {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+  &--header {
     @include responsive(desktop) {
-        font-size: 1.25rem;
-        line-height: 30px;
+      width: 600px;
+      margin-inline: auto;
     }
-    &--header{
-        width: 600px;
-        margin-inline: auto;
+  }
+  &--m {
+    font-weight: 700;
+    font-size: 3.8125rem;
+    line-height: 91px;
+    margin-bottom: 0;
+    @include responsive(desktop) {
+      font-size: 6rem;
+      line-height: 144px;
     }
+  }
+  &--s {
+    font-weight: 700;
+    font-size: 3.3125rem;
+    line-height: 80px;
+    margin-bottom: 0;
+    @include responsive(desktop) {
+      font-size: 6rem;
+      line-height: 144px;
+    }
+  }
+  &--gray {
+    font-size: 0.9375rem;
+    line-height: 23px;
+    color: #808e9a;
+    margin-bottom: 0;
+  }
+  &--info {
+    margin-bottom: 0;
+  }
+  &--white {
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
 }

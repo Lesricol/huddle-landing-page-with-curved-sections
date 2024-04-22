@@ -1,19 +1,23 @@
 @use '../mixins/responsive.scss' as *;
 
-.container-logo{
-    padding: 24px 24px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 112px;
-    @include responsive(desktop) {
-        padding: 78px 63px 0 80px;
-    }
+.header {
+  margin-bottom: 120px;
 }
 
-.header-items{
-    padding: 0 40px;
-    @include responsive(desktop) {
-        padding: 0 212px;
-    }
+.container-logo {
+  padding: 24px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 112px;
+  @include responsive(desktop) {
+    padding: 78px 63px 0 80px;
+  }
+}
+
+.header-info {
+  padding: 0 40px;
+  @include responsive(desktop) {
+    padding: 0 212px;
+  }
 }

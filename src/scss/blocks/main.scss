@@ -1,0 +1,61 @@
+@use '../mixins/responsive.scss' as *;
+
+.communities-m {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  @include responsive(desktop) {
+    width: 252px;
+  }
+}
+.communities-s {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  @include responsive(desktop) {
+    width: 287px;
+  }
+}
+
+.communities-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.5rem;
+  @include responsive(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 23.8125rem;
+  }
+}
+
+.main-info-s {
+  padding: 0 27px 133px;
+  height: 763px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(/assets/images/path.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+  margin-bottom: 67px;
+}
+.main-info-m {
+  padding: 0 27px 133px;
+  height: 803px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/assets/images/path-bottom.svg);
+  background-repeat: no-repeat;
+  margin-bottom: 7px;
+}
+.main-info {
+  padding: 0 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+  margin-bottom: 120px;
+}

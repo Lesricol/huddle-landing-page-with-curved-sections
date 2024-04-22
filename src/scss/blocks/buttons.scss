@@ -1,34 +1,46 @@
 @use '../mixins/responsive.scss' as *;
 
-.button{
-    display: inline-block;
-    padding: 0.6875rem 2.5rem;
-    border-radius: 1.25rem;
-    background-color: var(--primary-color);
-    font-weight: 700;
-    font-size: 0.75rem;
-    line-height: 18px;
-    color: white;
-    margin-bottom: 104px;
-    box-shadow: 0 3px 7px #00252e2a;
+.button {
+  display: inline-block;
+  padding: 0.6875rem 2.5rem;
+  border-radius: 1.25rem;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 18px;
+  color: white;
+  margin-bottom: 104px;
+  box-shadow: 0 3px 7px #00252e2a;
+  @include responsive(desktop) {
+    font-size: 1.25rem;
+    line-height: 30px;
+    padding: 1.5625rem 6.25rem;
+    border-radius: 2.5rem;
+  }
+  &--border {
+    padding: 0.3281rem 1.125rem;
+    font-size: 0.5875rem;
+    background-color: transparent;
+    border: 0.0313rem solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 0.3125rem #ff52c021;
+    margin-bottom: 0;
     @include responsive(desktop) {
-        font-size: 1.25rem;
-        line-height: 30px;
-        padding: 1.5625rem 6.25rem;
-        border-radius: 2.5rem;
+      font-size: 1rem;
+      padding: 0.5625rem 1.875rem;
+      border-radius: 40px;
     }
-    &--border{
-        padding: 0.3281rem 1.125rem;
-        font-size: 0.5875rem;
-        background-color: transparent;
-        border: 0.0313rem solid var(--primary-color);
-        color: var(--primary-color);
-        box-shadow: 0 0 0.3125rem #ff52c021;
-        margin-bottom: 0;
-        @include responsive(desktop) {
-            font-size: 1rem;
-            padding: 0.5625rem 1.875rem;
-            border-radius: 40px;
-        }
-    }
+  }
+  &--main {
+    margin-bottom: 251px;
+  }
+  &--form {
+    margin-left: auto;
+    margin-bottom: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    line-height: 24px;
+    padding: 12px 41px;
+  }
 }
