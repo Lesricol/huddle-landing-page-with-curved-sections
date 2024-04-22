@@ -1,1 +1,15 @@
+@use '../mixins/responsive.scss' as *;
 
+.text{
+    margin: 0 0 48px;
+    font-size: 0.875rem;
+    line-height: 21px;
+    @include responsive(desktop) {
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+    &--header{
+        width: 600px;
+        margin-inline: auto;
+    }
+}

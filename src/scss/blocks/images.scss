@@ -1,0 +1,8 @@
+@use '../mixins/responsive.scss' as *;
+
+.logo{
+    width: 96px;
+    @include responsive(desktop) {
+        width: 240px;
+    }
+}

@@ -1,1 +1,12 @@
+@use '../mixins/responsive.scss' as *;
 
+.title{
+    margin: 0 0 24px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    line-height: 36px;
+    @include responsive(desktop) {
+       font-size: 3rem;
+       line-height: 72px;
+    }
+}
