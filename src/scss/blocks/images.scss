@@ -16,4 +16,7 @@
 
 .image-info {
   margin-bottom: 40px;
+  @include responsive(desktop) {
+    width: 517px;
+  }
 }

@@ -1,6 +1,42 @@
+@use '../mixins/responsive.scss' as *;
+
+
 .footer {
   text-align: left;
-  padding: 108px 28px;
+  padding: 108px 28px 46px;
   color: white;
   background-image: url(/assets/images/path-footer.svg);
+  background-repeat: no-repeat;
+  @include responsive(desktop) {
+    background-image: url(/assets/images/path-footer-desktop.svg);
+    display: flex;
+    flex-direction: row-reverse;
+    padding:272px 120px  103px;
+    justify-content: space-between;
+  }
+}
+
+.footer-info{
+  @include responsive(desktop) {
+    width: 520px;
+    
+  }
+}
+
+.contact{
+  width: 320px;
+  @include responsive(desktop) {
+    width: 340px;
+  }
+}
+
+.contact-info{
+  display: flex;
+  gap: 1rem;
+  &--top{
+    margin-bottom: 1rem;
+    }
+    &--bottom{
+      margin-bottom: 56px;
+    }
 }

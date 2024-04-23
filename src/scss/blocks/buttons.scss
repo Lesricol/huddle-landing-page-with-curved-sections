@@ -33,6 +33,9 @@
   }
   &--main {
     margin-bottom: 251px;
+    @include responsive(desktop) {
+      margin-bottom: 0;
+    }
   }
   &--form {
     margin-left: auto;
@@ -42,5 +45,8 @@
     border: none;
     line-height: 24px;
     padding: 12px 41px;
+    @include responsive(desktop) {
+      margin-inline: 0;
   }
+}
 }

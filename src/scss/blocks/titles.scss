@@ -16,9 +16,19 @@
   font-size: 1.25rem;
   line-height: 30px;
   margin: 0 0 1rem;
+  @include responsive(desktop) {
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
   &--l {
     padding: 0 16px;
     font-size: 1.5rem;
     line-height: 36px;
+    @include responsive(desktop) {
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 60px;
+    }
   }
+  
 }

@@ -42,10 +42,22 @@
   }
   &--info {
     margin-bottom: 0;
+    @include responsive(desktop) {
+      font-size: 1rem;
+      line-height: 24px;
+    }
   }
   &--white {
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 32px;
+    @include responsive(desktop) {
+      font-size: 0.875rem;
+      line-height: 24px;
+      width: 344px;
+    }
+  }
+  &--footer{
+    margin-bottom: 40px;
   }
 }
